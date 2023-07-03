@@ -85,6 +85,105 @@ Below is a screenshot of the code used for loading the data into Python.
 
 ![Loading_Data](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/78c618fd-a62f-4334-aa58-93cf12f4d1dd)
 
+---
+
+### Data Cleaning
+Perform a preliminary data inspection and data cleaning.
+
+a. Check for missing data and formulate an apt strategy to treat them.
+
+b. Remove duplicate data records.
+
+![Duplicates and Null Values](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/f5469dfe-25f8-49bb-a59c-9a3fb7769e51)
+
+### Choosing the Best Model: 
+The next phase was selecting the best model to deploy to identify the columns, in descending order, that are important for attrition prediction. I ran 3 different models to get the best for prediction purposes. The algorithms chosen are:  
+
+1.	Linear Regression
+2.	Random Forest Regressor 
+3.	Gradient Boosting Regressor
+   
+The Evaluation metric used for these models is the Mean Squared Error.
+
+![LR_Model](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/8500b02b-4510-403f-b594-5260ef520105)
+
+---
+
+![RF_Model](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/6d34e0ae-0c02-47b8-8a9c-0c3f3b268b57)
+
+---
+
+![GB_Model](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/5251bb47-982a-4dd0-9d66-f4e5319979af)
+
+---
+
+The best model is the Gradient Boosting Regressor model as it generated the lowest mean square error value of: 0.10613
+
+### Feature Importances: 
+This is to display the important variables and how each feature performs with the best model selected in making predictions.
+
+![Feature Importances](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/2ff67db0-67fd-4bf4-b387-6a395bbac426)
+
+---
+
+Deploying the Gradient Boosting Regressor model, it can be deduced that `['MonthlyIncome', 'MonthlyRate', 'Age', 'HourlyRate', 'YearsSinceLastPromotion']` are the top 5 predicted features for employee attrition. 
+
+By means of visually conveying this information , I used the Matplot library (matplotlib.pyplot) to create a horizontal bar chart for the graphical representation of the results. 
+
+![Matplotly_Feature Importances](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/a8bbb28c-bc22-4a9b-a8e6-aa2316482a67)
+
+---
+
+Finally, with the aid of seaborn and matplotlib, I plotted a heatmap of the feature importances using the computed correlation matrix. This is to show the strength of association between the variables and those that are strongly related. 
+
+![Heatmap](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/938ddc6f-edcc-42b1-9a96-4a58c7ecc386)
+
+---
+
+## Visualization and Business Intelligence:
+This phase involved generating a visual report that provides meaningful insights into different features within the dataset.
+
+![BI_I](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/c56e0381-732a-41ea-bc53-2453d5d8f1d5)
+
+
+---
+
+![BI_II](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/e42878b2-36c9-4301-8af3-65743bcef73d)
+
+
+---
+
+Based on the data analysis, notable findings include:
+
+1. The data indicates a higher attrition rate among male employees compared to female employees. This observation may be influenced by the lower monthly income of male employees compared to their female counterparts.
+
+2. The trend of employees departing from their organizations gradually diminished as their time with the company extended. This pattern can be attributed to the noteworthy correlation between prolonged years of service and higher monthly salary levels within the organization.
+
+3. As the age and average total working years of an employee increased, the leaving of individuals diminished significantly. This remarkable trend can be attributed to a compelling positive relationship between years of service and monthly earnings.
+
+## Recommendations: 
+Based on the comprehensive analysis conducted on this project and dataset, I have identified a set of actionable strategies and interventions that organizations can adopt to effectively mitigate attrition and enhance employee retention. These insights hold the potential to drive significant positive outcomes for organizational success and employee satisfaction.
+
+They are delineated hereunder:
+
+1. Addressing gender-based wage disparity could potentially help reduce the attrition rate among male employees. By rectifying any existing pay gaps and promoting gender equality in terms of compensation, the organization can create a more inclusive and supportive work environment. This, in turn, can lead to improved employee satisfaction, engagement, and ultimately, lower attrition rates among both male and female employees.
+
+2.  Recognizing the value of employee tenure and its positive impact on employee retention, the organization can focus on implementing initiatives to enhance career growth opportunities, professional development programs, and performance-based rewards. These can foster a motivating work environment for the employees that encourages them to stay for the long term.
+
+3.  Recognizing and rewarding employees for their long-term commitment and dedication is of paramount importance, as it plays a crucial role in fostering higher retention rates. Emphasizing rewards, such as providing competitive salaries and benefits that align with employees' increasing value over time, can be a pivotal step in achieving this goal. By adopting such measures, organizations can significantly enhance employee satisfaction, engagement, and loyalty, which in turn leads to reduced turnover.
+
+## Conclusion:
+This project delved into the critical issue of employee attrition and retention within organizations. Through extensive data analysis and machine learning techniques, we gained valuable insights into the factors that influence attrition rates.
+
+The findings revealed key drivers of employee attrition, such as income, years of experience, and tenure in a company. Armed with this knowledge, organizations can proactively implement targeted strategies to reduce attrition and bolster employee retention.
+
+By adopting evidence-based interventions, such as improving compensation, recognizing employee achievements, and providing growth opportunities, organizations can create a more conducive and fulfilling work environment. This, in turn, fosters a stronger sense of loyalty and engagement among employees, ultimately leading to improved retention rates and a more productive workforce.
+
+Overall, the project emphasizes the importance of data-driven decision-making in addressing employee attrition challenges. Armed with the right insights and strategies, organizations can build a resilient workforce, enhance employee satisfaction, and secure long-term success.
+
+
+
+
 
 
 
