@@ -82,7 +82,7 @@ Initially, the data was read into the Python Environment using the pandas packag
 
 Below is a screenshot of the code used for loading the data into Python.
 
-![Loading_Data](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/78c618fd-a62f-4334-aa58-93cf12f4d1dd)
+![Loading Data in Pandas](https://github.com/karotakore/Corporate-Attrition-Prediction/assets/116779227/f84227fd-7129-4ad7-a134-016fe2d04982)
 
 ---
 
@@ -93,8 +93,6 @@ a. Check for missing data and formulate an apt strategy to treat them.
 
 b. Remove duplicate data records.
 
-![Duplicates and Null Values](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/f5469dfe-25f8-49bb-a59c-9a3fb7769e51)
-
 ### Choosing the Best Model 
 The next phase was selecting the best model to deploy to identify the columns, in descending order, that are important for attrition prediction. I ran 3 different models to get the best for prediction purposes. The choice of algorithms are:  
 
@@ -104,20 +102,6 @@ The next phase was selecting the best model to deploy to identify the columns, i
    
 The Evaluation metric used for these models is the Mean Squared Error.
 
-![LR_Model](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/8500b02b-4510-403f-b594-5260ef520105)
-
----
-
-![RF_Model](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/6d34e0ae-0c02-47b8-8a9c-0c3f3b268b57)
-
----
-
-![GB_Model](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/5251bb47-982a-4dd0-9d66-f4e5319979af)
-
----
-
-The best model is the Gradient Boosting Regressor model as it generated the lowest mean square error value of: 0.106131788
-
 ### Feature Importances
 This is displaying the important variables and how each feature performs with the best model selected in making predictions.
 
@@ -125,29 +109,25 @@ This is displaying the important variables and how each feature performs with th
 
 ---
 
-Deploying the Gradient Boosting Regressor model, it can be deduced that `['MonthlyIncome', 'MonthlyRate', 'Age', 'HourlyRate', 'YearsSinceLastPromotion']` are the top 5 predicted features for employee attrition. 
+With the aid of seaborn and matplotlib, I plotted a heatmap of the feature importances using the computed correlation matrix. This is to show the strength of association between the variables and also those that are strongly related. 
 
-By means of visually conveying this information , I used the Matplot library (matplotlib.pyplot) to create a horizontal bar chart for the graphical representation of the results. 
+![Correlation Matrix - Heatmap](https://github.com/karotakore/Corporate-Attrition-Prediction/assets/116779227/2f5ab253-a5dd-4668-8d34-963394080524)
 
-![Matplotly_Feature Importances](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/a8bbb28c-bc22-4a9b-a8e6-aa2316482a67)
+The transformed dataset was eventually saved to a csv file. 
 
----
-
-Finally, with the aid of seaborn and matplotlib, I plotted a heatmap of the feature importances using the computed correlation matrix. This is to show the strength of association between the variables and also those that are strongly related. 
-
-![Heatmap](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/938ddc6f-edcc-42b1-9a96-4a58c7ecc386)
+![Saving to csv](https://github.com/karotakore/Corporate-Attrition-Prediction/assets/116779227/e6e18715-c964-44c5-8645-f88eb4ab5da8) 
 
 ---
 
 ## Visualization and Business Intelligence
 This is the generation of visual reports that provide meaningful insights into different features within the dataset.
 
-![BI_I](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/c56e0381-732a-41ea-bc53-2453d5d8f1d5)
+![Power BI Report I](https://github.com/karotakore/Corporate-Attrition-Prediction/assets/116779227/3cca471a-a193-420c-8e8b-38e18be8e142)
 
 
 ---
 
-![BI_II](https://github.com/Oghenekaro66/Corporate-Attrition-Prediction/assets/116779227/e42878b2-36c9-4301-8af3-65743bcef73d)
+![Power BI Report II](https://github.com/karotakore/Corporate-Attrition-Prediction/assets/116779227/17728302-a040-4c36-885c-ecd2d784fd68)
 
 
 ---
